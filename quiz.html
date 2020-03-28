@@ -5,14 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emre ERDEM</title>
     <style>
+    body {
+        font-size: 20px;
+    }
+    section {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    #home {
+        flex-direction: row;
+    }
+    nav ul {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-right: 15px;
+    }
+    
+     div {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    table {
+        width: 80%;
+        border: 1px solid blue;
+        }
+    td {
+         border: 1px dotted rgba(0, 0, 0, 0.5);
+        text-align: center;
+        }
+    th {
+            border: 1px solid black;
+        }
+        input {
+            width: 300px;
+            height: 30px;
+            font-size: 15px;
+        }
+        textarea {
+            min-width: 500px;
+            min-height: 150px;
+            font-size: 10px;
+        }
     #testimonies img {
         width: 300px;
         height: auto;
     }
     </style>
 <body>
-    Emre ERDEM
-    <nav id="home">
+    <section id="home">
+    <h2>Emre ERDEM</h2> 
+    <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#blog">Blog</a></li>
@@ -22,8 +73,10 @@
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+    </section>
     <section id="blog">
         <h2>My Blog Posts</h2>
+        <div>
         <article>
             <h4>Lorem ipsum dolor sit amet.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="https://youtu.be/kXShLPXfWZA">Aang vs Ozai</a> Ipsa saepe, assumenda minima eligendi qui repudiandae, sit veritatis laboriosam, veniam cupiditate excepturi iste quasi sunt vitae quos quam enim? Est, vitae.
@@ -46,10 +99,12 @@
             <li><a href="#">The Ones Beyond Help</a></li>
             <li><a href="#">Desperate spoiled youth seeking out a shortcut</a></li>
         </ul>
-    </aside>
+        </aside>
+    </div>
     </section>
     <section id="services">
         <h2>Services</h2>
+        <div>
         <article>
             <h2>Safest Security Systems!</h2>
             <p>We guarentee to provide ONLY the safest security systems that will give you a relief for any potential assaults!</p>
@@ -63,18 +118,18 @@
             <p>We possess tons of experience here to give you a hand in your competitive fields!</p>
         </article>
         <a href="#">Learn More...</a>
+        </div>
     </section>
     <section id="testimonies">
         <h2>Testimonies</h2>
+        <div>
         <article>
-            <div>
                 <img src="/html-quiz-with-JohnDohn/images/john.png" alt="John Doe’s picture">
                  <figcaption>John Doe’s picture</figcaption>
                  <h2>John Doe’s Testimony</h2>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cum iste quibusdam at ipsa eum adipisci sed? Id, vel maiores a corrupti nam exercitationem enim, harum recusandae voluptas, veniam quos aliquid distinctio iure fuga fugiat?
 
                 </p>
-            </div>
         </article>
         <article>
             <img src="/html-quiz-with-JohnDohn/images/Jane.png" alt="Jane Doe’s picture">
@@ -93,10 +148,20 @@
 
                 </p>
         </article>
+        </div>
     </section>
     <section id="team">
         <h2>Meet our team!</h2>
+        <div>
         <table>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Position
+                </th>
+            </tr>
             <tr>
                 <td>Günsu</td>
                 <td>Manager</td>
@@ -113,14 +178,14 @@
     </section>
     <section id="contact">
         <h2>Contact Us!</h2>
+        <div>
         <form>
             <label>Name:</label> 
-            <input type="text" value=""><br>
+            <input type="text" value=""><br><br>
             <label>E-mail:</label> 
-            <input type="text" value=""><br>
-            <label>Message</label> 
-            <textarea name="message" rows="10" cols="30">
-            </textarea><br><br>
+            <input type="text" value=""><br><br>
+            <label>Message</label><br>
+            <textarea name="message" rows="10" cols="30" placeholder="Your message..."></textarea><br><br>
             <input type="radio"name="purpose">
             <label>You’re looking for a job</label><br>
             <input type="radio" name="purpose">
@@ -131,6 +196,7 @@
             <a href="#"></a>
             <a href="#"></a>
             <a href="#"></a>
+        </div>
         </div>
     </section>
 </body>
